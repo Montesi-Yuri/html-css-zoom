@@ -39,7 +39,7 @@ ON TOP OF MAIN BUTTONS
 
 main .top-buttons{
     text-align: end;
-    padding-top: 5px;
+    padding-top: 10px;
     padding-right: 5px;
     padding-bottom: 10px;
 }
@@ -47,8 +47,9 @@ main .top-buttons{
 main .top-buttons a{
     background-color:darkgray;
     color: white;
-    padding: 2px;
+    padding: 2px 4px;
     text-decoration: none;
+    border-radius: 6px;
 }
 
 
@@ -60,6 +61,10 @@ USERS CAMERAS
     width: calc((100% - 30px) / 7);
     margin-bottom: 10px;
     position: relative;
+    background-image: url(https://picsum.photos/200/300);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 130px;
 }
 
 .users-cameras .flex-row.container{
@@ -188,17 +193,13 @@ DASHBOARD
     padding-bottom: 20px;
 }
 
-
-
-
-
-
+/*
+ END MEETING BUTTON
+  */
 
 .end-meeting-button{
     background-color: darkgray;
 }
-
-
 
 .end-meeting-button > a{
     text-align: end;
@@ -211,19 +212,13 @@ DASHBOARD
 }
 
 
-
-
-
-
-
-
-/*
+/* 
 DEBUG
-*/
+ */
 
-.debug .top-buttons{
+ .debug .top-buttons{
     width: 100%;
-    /* background-color: lightblue; */
+     background-color: lightblue;
     border: 1px dashed red;
 }
 
@@ -235,9 +230,9 @@ DEBUG
     height: 130px;
     background-color: bisque;
     border: 1px dashed red;
-}
+}  
 
-/* .debug .dashboard{
+.debug .dashboard{
     width: 100%;
     background-color: lightblue;
     border: 1px dashed red;
@@ -254,4 +249,4 @@ DEBUG
 
 .debug .user-single-button{
     border: 1px dashed red;
-} */
+}
