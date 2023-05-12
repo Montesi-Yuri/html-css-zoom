@@ -34,7 +34,7 @@ main{
 }
 
 /*
-TOP BUTTONS
+ON TOP OF MAIN BUTTONS
 */
 
 main .top-buttons{
@@ -86,8 +86,10 @@ DASHBOARD
 */
 
 .dashboard{
+    width: 100%;
     height: 100px;
     justify-content: space-between;
+    background-color: #242424;
 }
 
 .dashboard .record-buttons{
@@ -99,7 +101,8 @@ DASHBOARD
 }
 
 #chevron-up{
-    font-size: 20px;
+    font-size: 10px;
+    padding-left: 10px;
 }
 
 .dashboard .record-buttons{
@@ -113,6 +116,14 @@ DASHBOARD
 
 .dashboard .record-buttons *{
     color: white;
+}
+
+.dashboard .record-buttons p{
+    font-size: 11px;
+}
+
+.dashboard .record-buttons i{
+    padding-top: 20px;
 }
 
 .dashboard .record-buttons .mic *{
@@ -134,10 +145,19 @@ DASHBOARD
  USER BUTTONS
   */
 
+#share-icon{
+    color: green;
+}
+
+#special-button{
+    padding-left: 30px;
+}
+
 .user-buttons{
     flex-wrap: wrap;
     justify-content: space-around;
     width: 1100px;
+    color: white;
 }
 
 .dashboard .user-buttons .fa-solid{
@@ -147,7 +167,7 @@ DASHBOARD
 }
 
 .user-single-button{
-    width: 110px;
+    width: 120px;
     text-align: center;
 }
 
@@ -158,12 +178,14 @@ DASHBOARD
 .icon-row{
     width: 100%;
     justify-content: center;
+    padding-top: 20px;
 }
 
 .text-row{
     width: 100%;
     justify-content: center;
-    font-size: 12px;
+    font-size: 11px;
+    padding-bottom: 20px;
 }
 
 
@@ -172,12 +194,20 @@ DASHBOARD
 
 
 
+.end-meeting-button{
+    background-color: darkgray;
+}
 
 
 
-
-.end-meeting-button > p{
+.end-meeting-button > a{
     text-align: end;
+    line-height: 6em;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 
@@ -207,7 +237,7 @@ DEBUG
     border: 1px dashed red;
 }
 
-.debug .dashboard{
+/* .debug .dashboard{
     width: 100%;
     background-color: lightblue;
     border: 1px dashed red;
@@ -224,4 +254,4 @@ DEBUG
 
 .debug .user-single-button{
     border: 1px dashed red;
-}
+} */
