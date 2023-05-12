@@ -1,4 +1,4 @@
-/* 
+/*
 RESET
 */
 *{
@@ -7,7 +7,7 @@ RESET
     box-sizing: border-box;
 }
 
-/* 
+/*
 GENERAL
 */
 .container{
@@ -19,7 +19,7 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
-/* 
+/*
 MAIN
 */
 
@@ -33,7 +33,7 @@ main{
     flex-wrap: wrap;
 }
 
-/* 
+/*
 TOP BUTTONS
 */
 
@@ -52,7 +52,7 @@ main .top-buttons a{
 }
 
 
-/* 
+/*
 USERS CAMERAS
 */
 
@@ -81,35 +81,113 @@ USERS CAMERAS
     padding: 5px;
 }
 
-/* 
+/*
 DASHBOARD
 */
 
 .dashboard{
     height: 100px;
-    position: relative;
-}
-
-.record-buttons .fa-microphone, .fa-video{
-    font-size: 48px;
+    justify-content: space-between;
 }
 
 .dashboard .record-buttons{
-    position: absolute;
-    left: 10px;
-    bottom: 10px;
+    width: 100% / 3;
+}
+
+.record-buttons .fa-microphone, .fa-video{
+    font-size: 26px;
+}
+
+#chevron-up{
+    font-size: 20px;
+}
+
+.dashboard .record-buttons{
+    font-weight: 700;
 }
 
 .dashboard .record-buttons > *{
     display: inline-block;
-    padding-right: 40px;
+    margin-right: 30px;
 }
 
-.dashboard .record-buttons .mic *{ 
-    padding-right: 10px;
+.dashboard .record-buttons *{
+    color: white;
 }
 
-/* 
+.dashboard .record-buttons .mic *{
+    padding-left: 18px;
+    padding-right: 7px;
+}
+
+.dashboard .record-buttons .video *{
+    padding-left: 10px;
+    padding-right: 7px;
+}
+
+.dashboard .record-buttons i.fa-solid{
+    padding-left: 25px;
+    margin-bottom: 4px;
+}
+
+/*
+ USER BUTTONS
+  */
+
+.user-buttons{
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 1100px;
+}
+
+.dashboard .user-buttons .fa-solid{
+    font-size: 28px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.user-single-button{
+    width: 110px;
+    text-align: center;
+}
+
+.user-single-button *{
+    align-self: center;
+}
+
+.icon-row{
+    width: 100%;
+    justify-content: center;
+}
+
+.text-row{
+    width: 100%;
+    justify-content: center;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.end-meeting-button > p{
+    text-align: end;
+}
+
+
+
+
+
+
+
+
+/*
 DEBUG
 */
 
@@ -133,5 +211,17 @@ DEBUG
     width: 100%;
     background-color: lightblue;
     border: 1px dashed red;
-    
+
+}
+
+.debug .dashboard > *{
+    border: 1px dashed red;
+}
+
+.debug .user-buttons > *{
+    border: 1px dashed red;
+}
+
+.debug .user-single-button{
+    border: 1px dashed red;
 }
